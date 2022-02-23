@@ -22,17 +22,20 @@ input{
 }
 
 .card > .header{
-    margin-bottom: .25rem;
+    margin-bottom: .15rem;
+    /* overflow-wrap: break-word; */
+    overflow:hidden;
+    color: #444;
 }
 
 .card > .body{
-    font-size: .8rem;
-    color: #777;
+    font-size: .6rem;
+    color: #555;
 }
 
 .card > .type{
-    font-size: .8rem;
-    color: #777;
+    font-size: .6rem;
+    color: #666;
 }
 
 .hide{
