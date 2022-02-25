@@ -3,7 +3,7 @@ const userCardContainer = document.querySelector('[data-user-cards=container]')
 const searchInput = document.querySelector('[data-search]')
 
 let user = []
-getData()
+await getData()
 searchInput.addEventListener('input', (e) => {
     const value = e.target.value.toLowerCase()
     users.forEach(user => {
