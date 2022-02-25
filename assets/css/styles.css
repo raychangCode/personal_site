@@ -16,26 +16,39 @@ input{
 }
 
 .card{
+    position: relative;
     border: 1px solid black;
     background-color: white;
     padding: .5rem;
 }
 
 .card > .header{
-    margin-bottom: .15rem;
-    /* overflow-wrap: break-word; */
-    overflow:hidden;
-    color: #444;
+    margin-bottom: .25rem;
+    color: #374151;
 }
 
 .card > .body{
-    font-size: .6rem;
-    color: #555;
+    font-size: .8rem;
+    color: #777;
 }
 
 .card > .type{
-    font-size: .6rem;
-    color: #666;
+    font-size: .8rem;
+    color: #888;
+}
+
+.card > .fill-div{
+    text-decoration: none;
+    position: absolute;
+    vertical-align: bottom;
+    font-size: .4rem;
+    color: #00AAFF;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: .2rem;
+    bottom: .2rem;
+    right: 5%;
 }
 
 .hide{
