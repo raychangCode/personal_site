@@ -3,7 +3,7 @@ const userCardContainer = document.querySelector('[data-user-cards=container]')
 const searchInput = document.querySelector('[data-search]')
 
 let user = []
-await getData()
+getData()
 searchInput.addEventListener('input', (e) => {
     const value = e.target.value.toLowerCase()
     users.forEach(user => {
@@ -16,7 +16,7 @@ searchInput.addEventListener('input', (e) => {
 // load data and create card
 async function getData() {
 
-    fetch('https://remotive.io/api/remote-jobs')
+    fetch('https://remotive.io/api/remote-jobs?limit=200')
         .then(res => res.json())
         .then(data => {
             data = data.jobs
