@@ -18,7 +18,7 @@ input{
 .card{
     position: relative;
     border: 1px solid black;
-    background-color: white;
+    background-color: rgb(148, 111, 80);
     padding: .5rem;
 }
 
@@ -42,7 +42,8 @@ input{
     position: absolute;
     vertical-align: bottom;
     font-size: .4rem;
-    color: #00AAFF;
+    color: burlywood;
+    background-color: #0A88A4;
     border: 1px solid black;
     border-radius: 10px;
     background-color: transparent;
