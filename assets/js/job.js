@@ -4,8 +4,17 @@ const searchInput = document.querySelector('[data-search]')
 
 let user = []
 
+// debounce function
+function debounce(func, timeout = 400){
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => { func.apply(this, args); }, timeout);
+    };
+  }
+
 searchInput.addEventListener('input', (e) => {
-    const value = e.target.value.toLowerCase()
+    const value = debounce(e.target.value.toLowerCase())
     users.forEach(user => {
         const isVisible = user.name.toLowerCase().includes(value) || user.email.toLowerCase().includes(value)
         user.element.classList.toggle('hide', !isVisible)
